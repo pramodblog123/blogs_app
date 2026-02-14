@@ -4,9 +4,10 @@
     <h2 style="color: white; margin: 0;">My Blog</h2>
     
     <nav>
-      <a href="/" style="color: white; margin-right: 15px; text-decoration: none;">Home</a>
-      <a href="/posts" style="color: white; margin-right: 15px; text-decoration: none;">Posts</a>
-      <a href="/about" style="color: white; text-decoration: none;">About</a>
+      <%= link_to "Home", root_path, style: "color: white; margin-right: 15px; text-decoration: none;" %>
+      <%= link_to "New Post", new_post_path, style: "color: white; margin-right: 15px; text-decoration: none;" %>
+      <%= link_to "Posts", posts_path, style: "color: white; margin-right: 15px; text-decoration: none;" %>
+      <%#= link_to "About", about_path, style: "color: white; text-decoration: none;" %>
     </nav>
 
   </div>
